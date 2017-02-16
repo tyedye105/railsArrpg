@@ -1,3 +1,7 @@
 <h1>Welcome to the <%= @room.rm_name %>!</h1>
 <hr>
+<% if user_signed_in? %>
 <h2> <%= @room.rm_desc %></h2>
+<% else %>
+<h2>Hey there sailor, you need to become a member to enter the maw of the Kraken!</h2>
+<% end %>
